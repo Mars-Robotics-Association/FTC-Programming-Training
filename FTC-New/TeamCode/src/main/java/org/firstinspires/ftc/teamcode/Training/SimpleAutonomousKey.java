@@ -17,12 +17,12 @@ import org.firstinspires.ftc.teamcode.Core.Input.ControllerInput;
 //import org.firstinspires.ftc.teamcode.Core.Robots.MecanumBaseControl;
 import static java.lang.Thread.sleep;
 
-//SimpleAutonomous (or whatever name is in the line below) shows up on the phone so you can select it to run
+//SimpleAutonomous (or whatever name is here) shows up on the phone
 @Autonomous(name = "SimpleAutonomous", group = "Competition")
 @Disabled
 @Config
 //This name must match the file name
-public class SimpleAutonomous extends LinearOpMode //implements ControllerInputListener
+public class SimpleAutonomousKey extends LinearOpMode //implements ControllerInputListener
 {
     ////Dependencies////
     //  private MecanumBaseControl control;
@@ -46,8 +46,9 @@ public class SimpleAutonomous extends LinearOpMode //implements ControllerInputL
     private Servo wobbleRightServo;
 
     ////Variables////
-    //Tweaking Variables
+    //Tweaking Vars
 
+    private int howManyLoops = 0;
     private boolean hasRunForward = false;
 
     @Override
@@ -79,13 +80,36 @@ public class SimpleAutonomous extends LinearOpMode //implements ControllerInputL
 
     }
 
-    //START CODING THE DriveFoward() method after the "{" in the line below
-    private void DriveForward() {
-        
-
-
+    /*@Override
+    public void start(){
     }
 
+    @Override
+    public void loop() {
+        if(!hasRunForward) {
+            DriveForward();
+        }
+    }
+*/
+    private void DriveForward() { howManyLoops++;
+        telemetry.addData("endRun LOOPS: ", howManyLoops);
+        telemetry.update();
+        long endRun = System.currentTimeMillis()+8000;//define the time at which to stop as the current system time + 3 seconds
 
-}
+        while (endRun>System.currentTimeMillis()) {
+            FR.setPower(.25);
+            FL.setPower(-.25);
+            RR.setPower(.25);
+            RL.setPower(-.25);
+            telemetry.addData("endRun Countdown", endRun-System.currentTimeMillis());
+            telemetry.update();
+        }
+
+        //stop
+        FR.setPower(0);
+        FL.setPower(0);
+        RR.setPower(0);
+        RL.setPower(0);
+        hasRunForward = true;
+    }
 }
