@@ -1,6 +1,6 @@
 //:)
 
-package org.firstinspires.ftc.teamcode.OpMode;
+package org.firstinspires.ftc.teamcode.Training;
 
 import com.acmerobotics.dashboard.config.Config;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
@@ -11,7 +11,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 //The name that you use in the line below will show up on the phone for you to select to run on the robot
 @Autonomous(name = "SimpleAutonomous" , group = "Competition")
 
-public class SimpleAutonomousv2 extends LinearOpMode {
+public class SimpleAutonomous extends LinearOpMode {
     //declare wheel motors.  The names you give your motors must match the names you give them in the configuration file that is stored on the phone.
     private DcMotor FR;//front right wheel
     private DcMotor FL;//front left wheel
@@ -44,5 +44,4 @@ public class SimpleAutonomousv2 extends LinearOpMode {
     //stop the robot after it moves forward the correct number of milliseconds
     //PUT YOUR CODE TO STOP THE ROBOT HERE(BEFORE THE BRACKET BELOW)
 
-}
 }

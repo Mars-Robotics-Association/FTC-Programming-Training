@@ -1,6 +1,6 @@
 //:)
 
-package org.firstinspires.ftc.teamcode.OpMode;
+package org.firstinspires.ftc.teamcode.TrainingExtra;
 
 import com.acmerobotics.dashboard.config.Config;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
@@ -8,10 +8,10 @@ import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "SimpleAutonomous" , group = "Competition")
+@Autonomous(name = "SimpleAutonomousKey" , group = "Competition")
 @Disabled
 
-public class SimpleAutonomousv2 extends LinearOpMode {
+public class SimpleAutonomousKey extends LinearOpMode {
     //declare wheel motors
     private DcMotor FR;//front right wheel
     private DcMotor FL;//front left wheel
