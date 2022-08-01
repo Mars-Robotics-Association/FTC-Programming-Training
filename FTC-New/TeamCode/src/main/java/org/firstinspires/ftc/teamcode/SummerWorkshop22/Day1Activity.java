@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 //The name that you use in the line below will show up on the phone for you to select to run on the robot
-@Autonomous(name = "LukeWantsToTestAThing" , group = "Competition")
+@Autonomous(name = "Day1Activity" , group = "Competition")
 
 public class Day1Activity extends LinearOpMode {
     //declare wheel motors.  The names you give your motors must match the names you give them in the configuration file that is stored on the phone.
