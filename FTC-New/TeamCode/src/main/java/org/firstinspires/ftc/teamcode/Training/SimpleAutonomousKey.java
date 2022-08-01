@@ -1,8 +1,7 @@
 //:)
 
-package org.firstinspires.ftc.teamcode.TrainingExtra;
+package org.firstinspires.ftc.teamcode.Training;
 
-import com.acmerobotics.dashboard.config.Config;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;

@@ -1,22 +1,15 @@
-package org.firstinspires.ftc.teamcode.TrainingExtra;
+package org.firstinspires.ftc.teamcode.Training;
 
 import com.acmerobotics.dashboard.config.Config;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.CRServo;
-import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.util.RobotLog;
+import com.qualcomm.robotcore.hardware.Servo;
 
-import org.firstinspires.ftc.robotcore.internal.camera.delegating.DelegatingCaptureSequence;
 import org.firstinspires.ftc.teamcode.Core.Input.ControllerInput;
 import org.firstinspires.ftc.teamcode.Core.Input.ControllerInputListener;
-
-//import org.firstinspires.ftc.teamcode.Core.Robots.CuriosityUltimateGoalControl;
-
 import org.firstinspires.ftc.teamcode.Core.Robots.MecanumBaseControl;
-import org.firstinspires.ftc.teamcode.MechanicalControl.Kenobi.WobbleGoalController;
 
 //SimpleTeleOpKenobi (or whatever name is here) shows up on the phone
 @TeleOp(name = "SimpleTeleOp", group = "Competition")
