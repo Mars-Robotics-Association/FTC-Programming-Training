@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.Training;
+package org.firstinspires.ftc.teamcode.SummerWorkshop22;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
 
@@ -6,7 +6,7 @@ public class SimpleMethods {
 
 
 
-    public void moveWheels(DcMotor FR, DcMotor FL, DcMotor RR, DcMotor RL, int dist) {
+    public static void moveWheels(DcMotor FR, DcMotor FL, DcMotor RR, DcMotor RL, int dist) {
         FR.setTargetPosition(FR.getCurrentPosition()+dist);
         FL.setTargetPosition(FL.getCurrentPosition()+dist);
         RR.setTargetPosition(RR.getCurrentPosition()+dist);
@@ -26,7 +26,7 @@ public class SimpleMethods {
         RL.setPower(0);
     }
 
-    public void turnLeft(DcMotor FR, DcMotor FL, DcMotor RR, DcMotor RL, int dist){
+    public static void turnLeft(DcMotor FR, DcMotor FL, DcMotor RR, DcMotor RL, int dist){
         FR.setTargetPosition(FR.getCurrentPosition()+dist);
         FL.setTargetPosition(FL.getCurrentPosition()-dist);
         RR.setTargetPosition(RR.getCurrentPosition()+dist);
@@ -44,6 +44,11 @@ public class SimpleMethods {
         FL.setPower(0);
         RR.setPower(0);
         RL.setPower(0);
+    }
+
+    public static void driveInches(DcMotor FR, DcMotor FL, DcMotor RR, DcMotor RL, int inches)
+    {
+        //you will write this
     }
 }
 
